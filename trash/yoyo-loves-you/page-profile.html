@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+
+    	<meta charset="UTF-8" />
+
+		<title>yoyo</title>
+	 
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+
+
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/skycons/css/skycons.css" rel="stylesheet" />
+		<link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="assets/vendor/css/pace.preloader.css" rel="stylesheet" />
+
+		<link href="assets/plugins/bootkit/css/bootkit.css" rel="stylesheet" />
+		<link href="assets/plugins/scrollbar/css/mCustomScrollbar.css" rel="stylesheet" />
+		<link href="assets/plugins/magnific-popup/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />					
+		
+
+		<link href="assets/css/jquery.mmenu.css" rel="stylesheet" />
+		
+
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<link href="assets/css/add-ons.min.css" rel="stylesheet" />
+		
+
+		<script src="assets/plugins/modernizr/js/modernizr.js"></script>
+		
+
+	</head>
+	
+	<body>
+	
+
+		<div class="navbar" role="navigation">
+			<div class="container-fluid container-nav">
+
+				<ul class="nav navbar-nav navbar-actions navbar-left">
+					<li class="visible-md visible-lg"><a href="#" id="main-menu-toggle"><i class="fa fa-th-large"></i></a></li>
+					<li class="visible-xs visible-sm"><a href="#" id="sidebar-menu"><i class="fa fa-navicon"></i></a></li>			
+				</ul>
+
+				<div class="navbar-left">
+
+					<form class="search navbar-form">
+						<div class="input-group input-search">
+							<input type="text" class="form-control bk-radius" name="q" id="q" placeholder="查找...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+							</span>
+						</div>						
+					</form>
+				</div>
+
+				<div class="navbar-right">					
+
+					<ul class="notifications hidden-xs">
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-envelope"></i>
+								<span class="badge">5</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-menu-header">
+									<strong>消息</strong>
+								</li>
+								<li class="avatar">
+									<a href="mailbox-inbox.html">
+										<img class="avatar" src="#" alt="" />
+										<div><div class="point point-primary point-lg"></div>新消息</div>
+										<span><small>1分钟前</small></span>
+									</a>
+								</li>
+								<li class="dropdown-menu-footer text-center">
+									<a href="mailbox-inbox.html">查看全部消息</a>
+								</li>	
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<span class="badge">3</span>
+							</a>
+							<ul class="dropdown-menu list-group">
+								<li class="dropdown-menu-header">
+									<strong>提醒</strong>
+								</li>
+								<li class="list-item">
+									<a href="mailbox-inbox.html">
+										<div class="pull-left">
+										   <i class="fa fa-envelope-o bk-fg-primary"></i>
+										</div>
+										<div class="media-body clearfix">
+											<div>未读消息</div>
+											<h6>你有5 个未读消息</h6>
+										</div>								
+									</a>
+								</li>
+								<li class="list-item">
+									<a href="#">
+										<div class="pull-left">
+										   <i class="fa fa-cogs bk-fg-primary"></i>
+										</div>
+										<div class="media-body clearfix">
+											<div>新功能</div>
+											<h6>yoyo有了新的功能</h6>
+										</div>								
+									</a>
+								</li>
+								<li class="list-item-last">
+									<a href="#">
+									  <h6>未读提醒</h6>
+									  <span class="badge">5</span>
+								   </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<div class="userbox">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<figure class="profile-picture hidden-xs">
+								<img src="#" class="img-circle" alt="" />
+							</figure>
+							<div class="profile-info">
+								<span class="name">哈哈哈</span>
+								<span class="role"><i class="fa fa-circle bk-fg-success"></i>学生</span>
+							</div>			
+							<i class="fa custom-caret"></i>
+						</a>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li class="dropdown-menu-header bk-bg-white bk-margin-top-15">
+
+								</li>
+								<li>
+									<a href="page-profile.html"><i class="fa fa-user"></i>个人信息</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-wrench"></i> 设置</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-file"></i>我的笔记</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-power-off"></i> 注销</a>
+								</li>
+							</ul>
+						</div>						
+					</div>
+
+				</div>
+
+			</div>		
+		</div>
+
+		<div class="container-fluid content">	
+			<div class="row">
+			
+
+				<div class="sidebar">
+					<div class="sidebar-collapse">
+
+						<div class="sidebar-header">
+							<img src="#" class="img-responsive" alt="" />
+						</div>
+
+						<div class="sidebar-menu">						
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-sidebar">
+									<div class="panel-body text-center">								
+										<div class="flag">
+											<img src="#" class="img-flags" alt="" />
+										</div>
+									</div>
+									<li>
+										<a href="index.html">
+											<i class="fa fa-laptop" aria-hidden="true"></i><span>动态</span>
+										</a>
+									</li>
+									<li>
+										<a href="mailbox-inbox.html">
+											<span class="pull-right label label-danger">235</span>
+											<i class="fa fa-envelope" aria-hidden="true"></i><span>邮件</span>
+										</a>
+									</li>
+									<li class="nav-parent nav-expanded active">
+										<a>
+											<i class="fa fa-copy" aria-hidden="true"></i><span>个人中心</span>
+										</a>
+										<ul class="nav nav-children">
+											<li><a href="page-profile.html"><span class="text"> 信息</span></a></li>
+											<li><a href="#"><span class="text"> 注销</span></a></li>
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-list-alt" aria-hidden="true"></i><span>选课中心</span>
+										</a>
+										<ul class="nav nav-children">
+											<li><a href="form-elements.html"><span class="text">选择课程</span></a></li>
+
+											<li><a href="form-editors.html"><span class="text">草稿箱</span></a></li>
+											</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-table" aria-hidden="true"></i><span>笔记中心</span>
+										</a>
+										<ul class="nav nav-children">
+											<li><a href="table-editable.html"><span class="text">我的笔记</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="gallery.html">
+											<i class="fa fa-picture-o" aria-hidden="true"></i><span>图片</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+					</div>
+
+					<div class="sidebar-footer">					
+
+						<ul class="sidebar-terms bk-margin-top-10">
+							<li><a href="#">帮助</a></li>
+							<li><a href="#">关于</a></li>
+						</ul>					
+					</div>
+
+				</div>
+
+				<div class="main">
+
+					<div class="page-header">
+						<div class="pull-left">
+							<ol class="breadcrumb visible-sm visible-md visible-lg">								
+								<li><a href="index.html"><i class="icon fa fa-home"></i>首页</a></li>
+								<li><a href="#"><i class="fa fa-file-text"></i>个人中心</a></li>
+								<li class="active"><i class="fa fa-reddit"></i>信息</li>
+							</ol>						
+						</div>
+						<div class="pull-right">
+							<h2>个人信息</h2>
+						</div>					
+					</div>
+
+					<div class="row profile">
+						<div class="col-lg-4 col-md-5 col-sm-5">
+							<div class="panel">
+								<div class="panel-body">
+									<div class="text-left bk-bg-white bk-padding-top-40 bk-padding-bottom-10">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bk-vcenter text-center">                                
+												<div class="bk-avatar">
+													<img src="#" alt="" class="img-circle bk-img-120 bk-border-light-gray bk-border-3x" />
+												</div>
+												<h4 class="bk-margin-top-10 bk-docs-font-weight-300">哈哈哈</h4>
+											</div>
+											<hr class="bk-margin-off" />
+										</div>
+									</div>
+									<hr class="bk-margin-off" />
+									<div class="bk-ltr bk-bg-white">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<div class="bk-widget bk-border-off bk-webkit-fix">
+													<div class="bk-bg-white text-center bk-padding-top-20 bk-padding-bottom-10">
+														<div class="row">
+															<div class="text-left bk-padding-left-10">
+																<h4 class="bk-margin-off">基本信息</h4>
+															</div>                            
+														</div>
+													</div> 
+													<div class="bs-example">
+														<div id="carousel-example-generic3" class="carousel bk-carousel-fade slide" data-ride="carousel">
+															<div class="carousel-inner">
+																<div class="item">
+																	<a class="panel-body bk-bg-white bk-bg-lighten bk-padding-off-top bk-padding-off-bottom">
+																		<div class="pull-left bk-margin-top-10 bk-margin-right-10">
+																			<div class="bk-round bk-bg-darken bk-border-off bk-icon bk-icon-default bk-bg-primary">
+																				<i class="fa fa-thumbs-up"></i>
+																			</div>
+																		</div>
+																		<h5 class="bk-fg-primary bk-fg-darken bk-margin-off-bottom">专业</h5>
+																		<p>
+																			<small>计算机</small>
+																		</p>
+																	</a>                                   
+																</div>
+																<div class="item active">
+																	<a class="panel-body bk-bg-white bk-bg-lighten bk-padding-off-top bk-padding-off-bottom">
+																		<div class="pull-left bk-margin-top-10 bk-margin-right-10">
+																			<div class="bk-round bk-bg-darken bk-border-off bk-icon bk-icon-default bk-bg-info">
+																				<i class="fa fa-building-o"></i>
+																			</div>
+																		</div>
+																		<h5 class="bk-fg-info bk-fg-darken bk-margin-off-bottom">学校</h5>
+																		<p>
+																			<small>吉林大学</small>
+																		</p>
+																	</a>                                    
+																</div>                               
+															</div>
+															<a class="left carousel-control bk-carousel-control bk-carousel-control-white bk-carousel-hide-init" href="#carousel-example-generic3" role="button" data-slide="prev">
+																<span class="fa fa-angle-left icon-prev bk-bg-very-light-gray"></span>
+															</a>
+															<a class="right carousel-control bk-carousel-control bk-carousel-control-white bk-carousel-hide-init" href="#carousel-example-generic3" role="button" data-slide="next">
+																<span class="fa fa-angle-right icon-next"></span>
+															</a>
+														</div>
+													</div>																				
+												</div>
+											</div>
+										</div>
+									</div>
+									<hr class="bk-margin-off" />
+									<div class="bk-ltr bk-bg-white">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<div class="bk-bg-white text-center bk-padding-top-20 bk-padding-bottom-10">
+													<div class="row">
+														<div class="text-left bk-padding-left-10">
+															<h4 class="bk-margin-off">位置</h4>
+														</div>                            
+													</div>
+												</div> 
+												<div class="bk-bg-white bk-bg-lighten bk-padding-top-10 bk-padding-left-20">
+													<div class="pull-left bk-margin-right-10">
+														<div class="bk-round bk-bg-darken bk-border-off">
+															<i class="fa fa-map-marker fa-2x bk-fg-danger"></i>
+														</div>
+													</div>
+													<p class="text-left">
+														<small>吉大逸夫</small>
+													</p>
+												</div>  
+											</div>																	
+										</div>
+									</div>
+									<div class="bk-ltr bk-padding-bottom-20 bk-padding-left-20">
+										<div class="row">
+											<div class="col-12-4 col-md-12 col-sm-12 col-xs-12 bk-bg-white bk-padding-top-10">
+												<i class="fa fa-envelope"></i> *******
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>							
+						</div>
+						
+						<div class="col-lg-5 col-md-7 col-sm-7">
+							<div class="panel">
+								<div class="panel-body">
+									<div class="tabs tabs-warning">
+										<ul class="nav nav-tabs">
+											<li>
+												<a href="#edit" data-toggle="tab">编辑</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div id="edit" class="active" >
+												<form class="form-horizontal" method="get">
+													<div class="bk-bg-white bk-padding-top-10 bk-padding-bottom-10">
+														<h4>个人信息</h4>
+														<fieldset>
+															<div class="form-group">
+																<label for="profileFirstName">昵称</label>
+																<input type="text" class="form-control" id="profileFirstName" placeholder=" 昵称" />
+															</div>
+
+															<div class="form-group">
+																<label for="profileAddress">位置</label>
+																<input type="text" class="form-control" id="profileAddress" placeholder="你的位置" />
+															</div>
+															<div class="form-group">
+																<label for="profileCompany">学校</label>
+																<input type="text" class="form-control" id="profileCompany" placeholder="你的学校" />
+															</div>
+														</fieldset>
+														<hr />
+														<h4>个人简述</h4>
+														<fieldset>
+															<div class="form-group">
+																<label for="profileBio"></label>
+																<textarea class="form-control" rows="5" id="profileBio" placeholder=" "></textarea>
+															</div>
+														</fieldset>
+														<hr />
+														<div class="bk-bg-white">
+															<div class="row">
+																<div class="col-md-12">
+																<div class="pull-right">
+																	<button type="submit" class="btn btn-primary">确认</button>
+																	<button type="reset" class="btn btn-default">重置</button>
+																</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+
+
+			</div>
+		</div>
+			
+		
+		<div class="clearfix"></div>		
+		
+
+
+		<script src="assets/vendor/js/jquery.min.js"></script>
+		<script src="assets/vendor/js/jquery-2.1.1.min.js"></script>
+		<script src="assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/skycons/js/skycons.js"></script>	
+		<script src="assets/vendor/js/pace.min.js"></script>
+
+		<script src="assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
+		<script src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="assets/plugins/bootkit/js/bootkit.js"></script>
+		<script src="assets/plugins/moment/js/moment.min.js"></script>
+		<script src="assets/plugins/magnific-popup/js/magnific-popup.js"></script>
+		<script src="assets/plugins/sparkline/js/jquery.sparkline.min.js"></script>
+		
+
+		<script src="assets/js/jquery.mmenu.min.js"></script>
+		<script src="assets/js/core.min.js"></script>
+
+		<script src="assets/js/pages/profile.js"></script>
+		
+
+		
+	</body>
+	
+</html>

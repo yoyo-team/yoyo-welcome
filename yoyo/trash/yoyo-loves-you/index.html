@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title>yoyo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="assets/vendor/skycons/css/skycons.css" rel="stylesheet" />-->
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/vendor/css/pace.preloader.css" rel="stylesheet" />
+
+    <link href="assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
+    <link href="assets/plugins/scrollbar/css/mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/bootkit/css/bootkit.css" rel="stylesheet" />
+    <link href="assets/plugins/magnific-popup/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet" />
+    <link href="assets/plugins/jqvmap/jqvmap.css" rel="stylesheet" />
+
+    <link href="assets/css/jquery.mmenu.css" rel="stylesheet" />
+
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/add-ons.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.bootcss.com/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="navbar" role="navigation">
+    <div class="container-fluid container-nav">
+
+        <ul class="nav navbar-nav navbar-actions navbar-left">
+            <li class="visible-md visible-lg">
+                <a href="#" id="main-menu-toggle"><i class="fa fa-th-large"></i></a></li>
+            <li class="visible-xs visible-sm"><a href="#" id="sidebar-menu"><i class="fa fa-navicon"></i></a></li>
+        </ul>
+
+        <div class="navbar-left">
+
+            <form class="search navbar-form">
+                <div class="input-group input-search">
+                    <input type="text" class="form-control bk-radius" name="q" id="q" placeholder="查找...">
+                    <span class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+							</span>
+                </div>
+            </form>
+        </div>
+
+        <div class="navbar-right">
+
+            <ul class="notifications hidden-xs">
+
+                <li>
+                    <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge">5</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-header">
+                            <strong>消息</strong>
+
+                        </li>
+
+
+                        <li class="avatar">
+                            <a href="mailbox-inbox.html">
+                                <img class="avatar" src="#" alt="" />
+                                <div><div class="point point-primary point-lg"></div>新消息</div>
+                                <span><small>1分钟之前</small></span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-footer text-center">
+                            <a href="mailbox-inbox.html">查看全部消息</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge">3</span>
+                    </a>
+                    <ul class="dropdown-menu list-group">
+                        <li class="dropdown-menu-header">
+                            <strong>提醒</strong>
+                        </li>
+                        <li class="list-item">
+                            <a href="mailbox-inbox.html">
+                                <div class="pull-left">
+                                    <i class="fa fa-envelope-o bk-fg-primary"></i>
+                                </div>
+                                <div class="media-body clearfix">
+                                    <div>未读消息</div>
+                                    <h6>你有5个未读消息</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">
+                                <div class="pull-left">
+                                    <i class="fa fa-cogs bk-fg-primary"></i>
+                                </div>
+                                <div class="media-body clearfix">
+                                    <div>新功能</div>
+                                    <h6>yoyo有了新功能</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item-last">
+                            <a href="#">
+                                <h6>未读提醒</h6>
+                                <span class="badge">5</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="userbox">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <figure class="profile-picture hidden-xs">
+                        <img src="#" class="img-circle" alt="" />
+                    </figure>
+                    <div class="profile-info">
+                        <span class="name">哈哈哈</span>
+                        <span class="role"><i class="fa fa-circle bk-fg-success"></i>学生</span>
+                    </div>
+                    <i class="fa custom-caret"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <ul class="list-unstyled">
+                        <li class="dropdown-menu-header bk-bg-white bk-margin-top-15">个人信息
+                        </li>
+                        <li>
+                            <a href="page-profile.html"><i class="fa fa-user"></i>个人信息</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench"></i> 设置</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-file"></i>笔记</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-power-off"></i>注销</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid content">
+    <div class="row">
+
+
+        <div class="sidebar">
+            <div class="sidebar-collapse">
+
+                <div class="sidebar-header">
+                    <img src="#" class="img-responsive" alt="" />
+                </div>
+
+                <div class="sidebar-menu">
+                    <nav id="menu" class="nav-main" role="navigation">
+                        <ul class="nav nav-sidebar">
+                            <div class="panel-body text-center">
+                                <div class="flag">
+                                    <img src="#" class="img-flags" alt="" />
+                                </div>
+                            </div>
+                            <li class="active">
+                                <a href="index.html">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i><span>动态</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailbox-inbox.html">
+                                    <span class="pull-right label label-danger">235</span>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><span>邮件</span>
+                                </a>
+                            </li>
+                            <li class="nav-parent">
+                                <a>
+                                    <i class="fa fa-copy" aria-hidden="true"></i><span>个人中心</span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li><a href="page-profile.html"><span class="text">信息 </span></a></li>
+                                    <li><a href="#"><span class="text"> 注销</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a>
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i><span>选课中心</span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li><a href="form-elements.html"><span class="text"> 选择课程</span></a></li>
+
+                                    <li><a href="form-editors.html"><span class="text">草稿箱</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a>
+                                    <i class="fa fa-table" aria-hidden="true"></i><span>笔记中心</span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li><a href="table-editable.html"><span class="text">我的笔记</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="gallery.html">
+                                    <i class="fa fa-picture-o" aria-hidden="true"></i><span>图片</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="sidebar-footer">
+                <ul class="sidebar-terms bk-margin-top-10">
+                    <li><a href="#">帮助</a></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main ">
+
+            <div class="page-header">
+                <div class="pull-left">
+                    <ol class="breadcrumb visible-sm visible-md visible-lg">
+                        <li><a href="index.html"><i class="icon fa fa-home"></i>首页</a></li>
+                        <li class="active"><i class="fa fa-laptop"></i>动态</li>
+                    </ol>
+                </div>
+                <div class="pull-right">
+                    <h2>动态</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel">
+                        <div class="panel-heading panel-heading-transparent">
+                            <h6><strong>朋友圈分享</strong></h6>
+                            <div class="panel-actions">
+                                <a href="#" class="btn-minimize"><i class="fa fa-caret-up"></i></a>
+                                <a href="#" class="btn-close"><i class="fa fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="bk-docs-scroll-hidden">
+                                <div class="bk-padding-left-20 bk-padding-right-20">
+                                    <a class="bk-bg-very-light-gray bk-bg-lighten bk-padding-off-top bk-padding-off-bottom">
+                                        <div class="pull-left bk-margin-top-10 bk-margin-right-10">
+                                            <div class="bk-avatar">
+                                                <img src="#" alt="" class="img-circle bk-img-60 bk-border-off" />
+                                            </div>
+                                        </div>
+                                        <div class="bk-fg-inverse bk-margin-top-10">
+                                            <strong class="bk-fg-primary"><div class="point point-success point-lg"></div>哈哈哈</strong>
+                                            <span class="pull-right"><i class="fa fa-clock-o"></i><small> 1分钟前</small></span>
+                                        </div>
+                                        <p>
+                                            计算机网络
+                                        </p>
+                                    </a>
+                                    <hr class="bk-margin-off" />
+                                </div>
+                                <div class="bk-padding-left-20 bk-padding-right-20">
+                                    <a class="bk-bg-very-light-gray bk-bg-lighten bk-padding-off-top bk-padding-off-bottom">
+                                        <div class="pull-right bk-margin-top-10 bk-margin-left-10">
+                                            <div class="bk-avatar">
+                                                <img src="#" alt="" class="img-circle bk-img-60 bk-border-off" />
+                                            </div>
+                                        </div>
+                                        <div class="bk-fg-inverse bk-margin-top-10">
+                                            <strong class="pull-right bk-fg-primary"><div class="point point-success point-lg"></div>呵呵呵</strong>
+                                            <span><i class="fa fa-clock-o"></i><small> 10分钟前</small></span>
+                                        </div>
+                                        <p>
+                                            数据结构
+                                        </p>
+                                    </a>
+                                    <hr class="bk-margin-off" />
+                                </div>
+                            </div>
+                            <div class="bk-bg-white bk-padding-top-15 bk-padding-bottom-15">
+                                <form role="form" action="javascript:">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bk-noradius" />
+                                        <span class="input-group-btn">
+													<button class="btn btn-default bk-noradius" type="button"><i class="fa fa-send-o"></i></button>
+												  </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading bk-bg-white">
+                            <h6><span class="label label-danger bk-margin-5">5</span>好友</h6>
+                            <div class="panel-actions">
+                                <a href="#" class="btn-minimize"><i class="fa fa-caret-up"></i></a>
+                                <a href="#" class="btn-close"><i class="fa fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <a class="bk-bg-white bk-padding-off-top bk-padding-off-bottom">
+                                <div class="row">
+                                    <div class="col-xs-3 bk-vcenter text-center bk-padding-10">
+                                        <div class="bk-avatar">
+                                            <img src="#" alt="" class="img-circle bk-img-40 bk-border-primary bk-border-2x bk-border-darken">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-9 bk-vcenter">
+                                        <h5 class="bk-fg-primary bk-fg-darken bk-margin-off-bottom">呵呵呵</h5>
+                                        <p>
+                                            算法
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="bk-margin-off">
+                            <a class="bk-bg-white bk-padding-off-top bk-padding-off-bottom">
+                                <div class="row">
+                                    <div class="col-xs-3 bk-vcenter text-center bk-padding-10">
+                                        <div class="bk-avatar">
+                                            <img src="#" alt="" class="img-circle bk-img-40 bk-border-danger bk-border-2x bk-border-darken">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-9 bk-vcenter">
+                                        <h5 class="bk-fg-danger bk-fg-darken bk-margin-off-bottom">啊啊啊</h5>
+                                        <p>
+                                            数学
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="bk-margin-off">
+                            <div class="panel-footer bk-bg-white">
+                                <div class="bk-padding-top-5 bk-padding-bottom-5 ">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <a href="#" class="bk-fg-textcolor"><small><i class="fa fa-angle-left"></i> 上一页</small></a>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <a href="#" class="bk-fg-textcolor"><small>下一页 <i class="fa fa-angle-right"></i></small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+
+<script src="assets/vendor/js/jquery.min.js"></script>
+<script src="assets/vendor/js/jquery-2.1.1.min.js"></script>
+<script src="assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/skycons/js/skycons.js"></script>
+<script src="assets/vendor/js/pace.min.js"></script>
+
+
+<script src="assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
+<script src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/plugins/bootkit/js/bootkit.js"></script>
+<script src="assets/plugins/magnific-popup/js/magnific-popup.js"></script>
+<script src="assets/plugins/moment/js/moment.min.js"></script>
+<script src="assets/plugins/fullcalendar/js/fullcalendar.js"></script>
+<script src="assets/plugins/flot/js/jquery.flot.min.js"></script>
+<script src="assets/plugins/flot/js/jquery.flot.pie.min.js"></script>
+<script src="assets/plugins/flot/js/jquery.flot.resize.min.js"></script>
+<script src="assets/plugins/flot/js/jquery.flot.stack.min.js"></script>
+<script src="assets/plugins/flot/js/jquery.flot.time.min.js"></script>
+<script src="assets/plugins/flot-tooltip/js/jquery.flot.tooltip.js"></script>
+<script src="assets/plugins/chart-master/js/Chart.js"></script>
+<script src="assets/plugins/jqvmap/jquery.vmap.js"></script>
+<script src="assets/plugins/jqvmap/data/jquery.vmap.sampledata.js"></script>
+<script src="assets/plugins/jqvmap/maps/jquery.vmap.world.js"></script>
+<script src="assets/plugins/sparkline/js/jquery.sparkline.min.js"></script>
+
+
+<script src="assets/js/jquery.mmenu.min.js"></script>
+<script src="assets/js/core.min.js"></script>
+
+
+<script src="assets/js/pages/index.js"></script>
+
+
+
+</body>
+
+</html>
